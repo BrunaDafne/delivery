@@ -1,4 +1,17 @@
 import {StyleSheet} from 'react-native';
+import styled from 'styled-components/native';
+import theme from '../../../styles/global/theme';
+
+export const Container = styled.View`
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 70%;
+  width: 100%;
+  background-color: ${theme.colors.background_tertiary};
+  bottom: 0px;
+  position: absolute;
+  align-items: center;
+`;
 
 const styles = StyleSheet.create({
   container: {

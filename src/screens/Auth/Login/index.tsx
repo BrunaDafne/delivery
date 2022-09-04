@@ -1,11 +1,12 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, TextInput} from 'react-native';
 import styles from './styles';
+import {Container} from './styles';
 
 export default function LoginScreen() {
   return (
     <View style={styles.container}>
-      <View style={styles.body}>
+      <Container>
         <View style={styles.container_form}>
           <Text style={styles.title_field}>Email</Text>
           <TextInput style={styles.field} placeholder="E-mail" />
@@ -20,7 +21,7 @@ export default function LoginScreen() {
           Não possui uma conta?
           <Text style={styles.bold_sign_up}> Cadastre-se</Text>
         </Text>
-      </View>
+      </Container>
     </View>
   );
 }
